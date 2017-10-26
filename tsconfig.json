@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": false,
+        "experimentalDecorators": true,
+        "noEmitOnError": true,
+        "removeComments": true,
+        "sourceMap": true,
+        "jsx": "react",
+        "target": "es5",
+        "types": [
+            "@types/react",
+            "@types/react-dom"
+        ],
+        "lib": [
+            "es2015",
+            "dom"
+        ]
+    },
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

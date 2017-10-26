@@ -1,0 +1,76 @@
+<script src="/bundle.js"></script>
+
+<dom-module id="custom-element">
+    <template>
+        <style>
+            div {
+                color: lightseagreen;
+            }
+
+            .hidden {
+                display: none;
+            }
+
+            .app-container {
+                position: relative;
+                border: 1px solid gainsboro;
+                background-color: floralwhite;
+                width: 200px;
+                padding: 15px;
+                margin: 20px;
+            }
+
+            .app-container .header {
+                color: thistle;
+                font-weight: bold;
+            }
+
+            .app-container .body {
+                color: lightsalmon;
+            }
+
+            .app-container .action {
+                text-align: right;
+            }
+
+            .app-container .action button {
+                background-color: olive;
+                color: cornsilk;
+                cursor: pointer;
+            }
+        </style>
+        <div id="webcomponentsContainer">
+            <p>This is webcomponents custom element</p>
+            <div id="reactContainer">This is where we will put react component</div>
+        </div>
+    </template>
+    
+    <script>
+        class CustomElement extends Polymer.Element {
+            static get is() {
+                return "custom-element";
+            }
+
+            constructor() {
+                super();
+                this.dispose = this.dispose.bind(this);
+            }
+
+            connectedCallback() {
+                super.connectedCallback();
+                ReactDOM.render(
+                    React.createElement(app.App, {"onDispose": this.dispose}),
+                    this.shadowRoot.querySelector("#reactContainer")
+                );
+
+                app.RetargetEvents(this.shadowRoot);
+            }
+
+            dispose() {
+                $(this).remove();
+            }
+        }
+        
+        customElements.define(CustomElement.is, CustomElement);
+    </script>    
+</dom-module>
