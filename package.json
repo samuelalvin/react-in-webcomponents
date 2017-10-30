@@ -1,6 +1,6 @@
 {
   "name": "react-in-webcomponents",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An example of a packaged Webcomponents custom element with React inside of it",
   "scripts": {
     "gulp": "gulp copy:lib",
@@ -9,6 +9,7 @@
   },
   "keywords": [
     "react",
+    "reactjs",
     "webcomponents"
   ],
   "author": "Samuel Hutama",
@@ -18,14 +19,14 @@
       "url": "https://github.com/samuelalvin/react-in-webcomponents"
   },
   "dependencies": {
-    "@webcomponents/webcomponentsjs": "1.0.17",
-    "es6-shim": "0.35.3",
     "jquery": "3.2.1",
     "react": "16.0.0",
     "react-dom": "16.0.0",
     "react-shadow-dom-retarget-events": "1.0.7"
   },
   "devDependencies": {
+    "@webcomponents/webcomponentsjs": "1.0.17",
+    "es6-shim": "0.35.3",
     "@types/react": "16.0.18",
     "@types/react-dom": "16.0.2",
     "gulp": "3.9.1",
