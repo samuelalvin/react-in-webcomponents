@@ -13,6 +13,10 @@
   ],
   "author": "Samuel Hutama",
   "license": "MIT",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/samuelalvin/react-in-webcomponents"
+  },
   "dependencies": {
     "@webcomponents/webcomponentsjs": "1.0.17",
     "es6-shim": "0.35.3",
