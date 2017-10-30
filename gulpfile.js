@@ -4,11 +4,8 @@ var exec = require("child_process").exec;
 gulp.task("copy:lib", function () {
     var lib =
     [
-        ["polymer", "node_modules/@polymer/polymer/**"],
         ["webcomponents", "node_modules/@webcomponents/webcomponentsjs/**"],
-        ["shadycss", "node_modules/@webcomponents/shadycss/**"],
-        ["react", "node_modules/react/**"],
-        ["react-dom", "node_modules/react-dom/**"]
+        ["es6-shim", "node_modules/es6-shim/**"]
     ];
 
     for (var index in lib) {

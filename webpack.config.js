@@ -1,5 +1,5 @@
 module.exports = {
-    entry: "./src/app/app.tsx",
+    entry: "./src/app/main.ts",
 
     output: {
         filename: "bundle.js",

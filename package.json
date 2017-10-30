@@ -4,19 +4,19 @@
   "description": "An example of a packaged Webcomponents custom element with React inside of it",
   "scripts": {
     "gulp": "gulp copy:lib",
+    "webpack": "webpack",
     "start": "lite-server -c=bs-config.json"
   },
   "keywords": [
     "react",
-    "webcomponents",
-    "polymer"
+    "webcomponents"
   ],
   "author": "Samuel Hutama",
   "license": "MIT",
   "dependencies": {
-    "@polymer/polymer": "2.2.0",
-    "@webcomponents/shadycss": "1.0.6",
     "@webcomponents/webcomponentsjs": "1.0.17",
+    "es6-shim": "0.35.3",
+    "jquery": "3.2.1",
     "react": "16.0.0",
     "react-dom": "16.0.0",
     "react-shadow-dom-retarget-events": "1.0.7"
@@ -27,6 +27,7 @@
     "gulp": "3.9.1",
     "lite-server": "2.3.0",
     "ts-loader": "3.0.5",
+    "typescript": "2.5.3",
     "webpack": "3.8.1"
   }
 }

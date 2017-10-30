@@ -1,5 +1,4 @@
-import * as React from "React";
-import * as retargetEvents from "react-shadow-dom-retarget-events";
+import * as React from "react";
 import Header from "./components/header";
 import Body from "./components/body";
 import Action from "./components/action";
@@ -29,5 +28,3 @@ export class App extends React.Component<IAppProps> {
         );
     }
 }
-
-export const RetargetEvents = retargetEvents;
