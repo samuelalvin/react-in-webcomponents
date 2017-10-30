@@ -22,3 +22,9 @@ After importing the polyfills, you can import this repo:
 ```
 <link rel="import" href="<path>/react-in-webcomponents/index.html">
 ```
+
+Use this custom element by typing:
+
+```
+<custom-element></custom-element>
+```

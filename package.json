@@ -1,6 +1,6 @@
 {
   "name": "react-in-webcomponents",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "An example of a packaged Webcomponents custom element with React inside of it",
   "scripts": {
     "gulp": "gulp copy:lib",
